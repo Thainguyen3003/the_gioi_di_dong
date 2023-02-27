@@ -216,4 +216,47 @@ nav ul li:nth-child(9):hover a {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  z-index: 5;
+}
+
+.address-form-content {
+  width: 400px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.address-form-content form {
+  padding: 0 40px;
+}
+
+.address-form-content h2 {
+  font-size: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.address-form-content h2 span {
+  display: block;
+  position: absolute;
+  height: 30px;
+  padding: 0 6px;
+  border: 1px solid #ddd;
+  right: 12px;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  line-height: 30px;
+  color: #333;
+  border-radius: 5px;
+}
+
+.address-form-content form input,
+select {
+  height: 40px;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
 }
