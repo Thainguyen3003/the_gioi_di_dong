@@ -152,7 +152,7 @@ nav ul li:nth-child(9):hover a {
   justify-content: space-between;
 }
 
-.menu-bar-content ul li {
+.menu-bar-content > ul > li {
   padding: 14px 4px;
   transition: all 0.3s ease;
   width: 100%;
@@ -173,11 +173,11 @@ nav ul li:nth-child(9):hover a {
   background-color: #d8ba24;
 }
 
-.menu-bar-content ul li:nth-child(8) {
+.menu-bar-content > ul > li:nth-child(8) {
   position: relative;
 }
 
-.menu-bar-content ul li:nth-child(8)::before {
+.menu-bar-content > ul > li:nth-child(8)::before {
   content: "Giảm 5%";
   position: absolute;
   display: block;
@@ -192,7 +192,7 @@ nav ul li:nth-child(9):hover a {
   color: #ffffff;
 }
 
-.menu-bar-content ul li:nth-child(8)::after {
+.menu-bar-content > ul > li:nth-child(8)::after {
   position: absolute;
   content: "";
   background-color: #f51212;
@@ -286,3 +286,19 @@ select {
 }
 
 /****************** -submenu- ************************/
+.menu-bar-content ul li {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  background-color: #ddd;
+  width: 300px;
+  height: auto;
+  z-index: 1;
+}
+
+.submenu ul {
+  display: flex;
+  flex-direction: column;
+}
