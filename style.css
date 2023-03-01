@@ -296,9 +296,21 @@ select {
   width: 300px;
   height: auto;
   z-index: 1;
+  left: 0;
+  top: 100%;
+  display: none;
 }
 
 .submenu ul {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
+}
+
+.submenu ul li {
+  padding: 6px 20px;
+}
+
+.menu-bar-content ul li:hover .submenu {
+  display: block;
 }
