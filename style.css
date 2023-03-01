@@ -314,3 +314,10 @@ select {
 .menu-bar-content ul li:hover .submenu {
   display: block;
 }
+
+/*******************- Slider -****************************/
+
+.slider {
+  padding: 20px 0;
+  height: 350px;
+}
